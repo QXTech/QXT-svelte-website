@@ -244,11 +244,10 @@ export const careers: Career[] = [
     rendered: false,
     date: "2021-01-26T14:00:00.000Z",
   },
-  /*{
-    title: "Working Student / Intern - Finance",
-    intro: `You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week? You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week?`,
-    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously.
-        We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
+  {
+    title: "Working Student - Finance",
+    intro: `You are a "jack of all trades, master of some" student with a background in business, finance or data science and want to work 10h to 20h a week? With daily challenging tasks, we'll show you what it's like to operate a high-growth venture.`,
+    paragraphs: `We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
     lists: [
       {
         title: "",
@@ -291,6 +290,6 @@ export const careers: Career[] = [
     ],
     textAfterTheLists: "",
     rendered: false,
-    date: "2021-04-21T14:00:00.000Z",
-  }, */
+    date: "2021-09-16T14:00:00.000Z",
+  },
 ];
