@@ -66,7 +66,7 @@
 </style>
 
 <h3>Connect Git repository</h3>
-<p class="text-large">
+<p class="max-w-md mx-auto">
   Select a Git provider to start with an existing project from any Git context.
 </p>
 <div class="buttons">

@@ -33,7 +33,7 @@ export const brands: Brand[] = [
   {
     alt: "Intel",
     logo: "svg/brands/intel.svg",
-    transform: "scale(0.8)",
+    transform: "scale(0.65)",
     className: "grey-logo",
   },
   {

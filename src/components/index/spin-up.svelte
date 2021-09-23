@@ -36,7 +36,7 @@
   </div>
   <div>
     <h3 class="h3">Spin up developer environments with a single click.</h3>
-    <p class="text-xl mt-xx-small mb-x-small">
+    <p class="mt-xx-small mb-x-small">
       Install the browser extension and add a button to your GitLab, GitHub and
       Bitbucket projects to easily spin up a dev environment with a single
       click.
