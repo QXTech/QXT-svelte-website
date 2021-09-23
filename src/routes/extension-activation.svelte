@@ -53,12 +53,12 @@
 
 <Config />
 
-<section class="cards triple sm:pb-huge">
+<section class="flex items-center lg:items-stretch flex-col lg:flex-row sm:pb-huge space-y-small lg:space-y-0 lg:space-x-xx-small">
   {#each features as feature}
-    <div class="py-small px-xx-small bg-gray-100 rounded-4xl">
+    <div class="text-center py-small px-xx-small bg-gray-100 rounded-4xl lg:w-1/3 max-w-md">
       <div>
         <!-- svelte-ignore a11y-missing-attribute -->
-        <img src={feature.icon} role="presentation" height="100" width="100" />
+        <img src={feature.icon} role="presentation" class="mx-auto mb-xx-small h-28 w-28" />
         <h2 class="h3">{feature.title}</h2>
         <p>{feature.description}</p>
       </div>

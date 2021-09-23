@@ -11,7 +11,6 @@
     align-items: center;
     max-width: 1140px;
     margin: 0 auto;
-    padding-top: var(--large);
 
     @media (max-width: 840px) {
       display: grid;

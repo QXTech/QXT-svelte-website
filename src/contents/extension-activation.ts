@@ -7,5 +7,6 @@ export const feature: Feature = {
   image: {
     src: "/images/extension-activation/extension-screenshot.png",
     alt: "A GitHub project page with the Gitpod button highlighted",
+    classNames: "shadow-medium rounded-2xl"
   },
 };

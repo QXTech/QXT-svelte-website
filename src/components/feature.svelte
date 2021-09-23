@@ -31,10 +31,10 @@
     <div class="my-xx-small md:my-0">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
-        <p>{paragraph}</p>
+        <p class="mt-micro">{paragraph}</p>
       </div>
       {#if moreButton || documentationLink}
-        <div class="mt-xx-small md:mt-x-large">
+        <div class="mt-xx-small md:mt-small">
           <a
             href={moreButton.href}
             class={`btn-${moreButton.type || "primary"}`}
@@ -51,13 +51,19 @@
       class="preview w-full col-start-1 row-start-1 md:col-start-auto md:row-start-auto"
     >
       {#if terminal}
-        <Console source={terminal.source} skipToEnd={terminal.skipToEnd} />
+        <Console 
+          source={terminal.source} 
+          dark={terminal.dark}
+          narrow={terminal.narrow}
+          shadow={terminal.shadow}
+          skipToEnd={terminal.skipToEnd} 
+        />
       {/if}
       {#if image}
         <img
           src={image.src}
           alt={image.alt}
-          class="block rounded-2xl shadow-medium"
+          class={image.classNames}
         />
       {/if}
       {#if previewComponent}

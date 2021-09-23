@@ -56,9 +56,6 @@
   .mt-2rem {
     margin-top: 2rem;
   }
-  .mb-7rem {
-    margin-bottom: 7rem;
-  }
   .mx-auto {
     margin-left: auto;
     margin-right: auto;

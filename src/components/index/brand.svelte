@@ -3,7 +3,7 @@
 
   export let brand: Brand;
 
-  const { href, logo, alt, transform, className } = brand;
+  const { logo, alt, transform, className } = brand;
 </script>
 
 <style lang="scss">
@@ -59,21 +59,11 @@
   }
 </style>
 
-<a
-  {href}
-  target="_blank"
-  on:click={() =>
-    window.analytics.track("socialproof_clicked", {
-      type: "logo",
-      url: href,
-    })}
-  rel="noopener"
-  class="brand"
->
+<div class="brand">
   <img
     src={`/${logo}`}
     {alt}
     style={`transform: ${transform}`}
     class={className}
   />
-</a>
+</div>
