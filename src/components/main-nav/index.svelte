@@ -23,10 +23,6 @@
 
   const navItems = [
     {
-      href: "/features",
-      label: "Features",
-    },
-    {
       href: "/screencasts",
       label: "Screencasts",
       isHighlighted: true,

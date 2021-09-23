@@ -21,6 +21,6 @@
 <Explore
   contents={{
     title: "Explore Gitpod",
-    link: { href: "/features", text: "Features" },
+    link: { href: "/screencasts", text: "View Screencasts" },
   }}
 />
