@@ -13,7 +13,7 @@
   import Features from "../components/features.svelte";
   import ChooseProject from "../components/index/choose-project.svelte";
   import Hero from "../components/index/hero.svelte";
-  import SectionScreenshot from "../components/index/section-screenshot.svelte";
+  import SectionScreenshot from "../components/index/section-ides.svelte";
   import Testimonials from "../components/index/testimonials.svelte";
   import GetStarted from "../components/index/get-started/index.svelte";
   import OpenGraph from "../components/open-graph.svelte";
