@@ -13,16 +13,12 @@
 
   .brand {
     flex-basis: calc(14% - 1.375rem);
-    min-width: 160px;
+    min-width: 130px;
     display: flex;
     border: 2px solid transparent;
     justify-content: center;
     margin: 0.75rem;
-
-    @media(max-width: 768px) {
-      min-width: 130px;
-    }
-
+    
     .grey-logo {
       filter: grayscale(100%) contrast(0%) brightness(116%);
       -webkit-filter: grayscale(100%) contrast(0%) brightness(116%);

@@ -5,15 +5,11 @@
 
 <style>
   .brands {
-    max-width: 1140px;
-  }
-
-  .brands > * {
-    min-width: 220px;
+    max-width: 1130px;
   }
 </style>
 
-<div class="flex flex-wrap justify-center items-center mx-auto">
+<div class="brands flex flex-wrap justify-center items-center mx-auto">
   {#each brands as brand}
     <Brand {brand} />
   {/each}
