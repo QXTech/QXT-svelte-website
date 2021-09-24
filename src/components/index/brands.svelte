@@ -3,23 +3,17 @@
   import Brand from "./brand.svelte";
 </script>
 
-<style lang="scss">
+<style>
   .brands {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     max-width: 1140px;
-    margin: 0 auto;
+  }
 
-    @media (max-width: 840px) {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
+  .brands > * {
+    min-width: 220px;
   }
 </style>
 
-<div class="brands">
+<div class="flex flex-wrap justify-center items-center mx-auto">
   {#each brands as brand}
     <Brand {brand} />
   {/each}

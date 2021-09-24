@@ -13,13 +13,14 @@
 
   .brand {
     flex-basis: calc(14% - 1.375rem);
+    min-width: 160px;
     display: flex;
     border: 2px solid transparent;
     justify-content: center;
     margin: 0.75rem;
 
-    img {
-      height: 100%;
+    @media(max-width: 768px) {
+      min-width: 130px;
     }
 
     .grey-logo {
