@@ -61,7 +61,8 @@ export const otherFeatures: Feature[] = [
     },
     image: {
       src: "/images/features/collaboration.png",
-      alt: "Collaboration"
+      alt: "Collaboration",
+      classNames: 'shadow-medium rounded-2xl'
     }
   },
   {

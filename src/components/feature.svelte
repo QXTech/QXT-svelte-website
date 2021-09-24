@@ -28,7 +28,7 @@
   <div
     class="feature grid justify-center items-center md:grid-cols-2 lg:gap-32 gap-small"
   >
-    <div class="my-xx-small md:my-0">
+    <div class="sm:my-micro md:my-0">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
         <p class="mt-micro">{paragraph}</p>
@@ -63,7 +63,7 @@
         <img
           src={image.src}
           alt={image.alt}
-          class={image.classNames}
+          class="{image.classNames} mx-auto"
         />
       {/if}
       {#if previewComponent}
