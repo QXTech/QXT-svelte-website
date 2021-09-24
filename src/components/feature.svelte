@@ -64,6 +64,7 @@
           src={image.src}
           alt={image.alt}
           class="{image.classNames} mx-auto"
+          style={image.styles}
         />
       {/if}
       {#if previewComponent}

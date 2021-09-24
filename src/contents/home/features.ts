@@ -62,7 +62,8 @@ export const otherFeatures: Feature[] = [
     image: {
       src: "/images/features/collaboration.png",
       alt: "Collaboration",
-      classNames: 'shadow-medium rounded-2xl'
+      classNames: 'shadow-medium',
+      styles: "border-radius: 7px"
     }
   },
   {
@@ -75,7 +76,8 @@ export const otherFeatures: Feature[] = [
     },
     image: {
       src: "/images/features/ipad.png",
-      alt: "Gitpod Workspace on an iPad."
+      alt: "Gitpod Workspace on an iPad.",
+      classNames: 'shadow-medium rounded-4xl'
     }
   },
 ]

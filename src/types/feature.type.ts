@@ -3,7 +3,7 @@ export type Feature = {
   paragraph: string;
   moreButton?: { text: string; href: string; type?: "secondary" | "tertiary" };
   documentationLink?: string;
-  image?: { src: string; alt: string; height?: number; width?: number; classNames?: string; };
+  image?: { src: string; alt: string; height?: number; width?: number; classNames?: string; styles?: string };
   terminal?: {
     source: string;
     skipToEnd?: boolean;
