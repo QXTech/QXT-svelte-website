@@ -8,7 +8,7 @@ export const features: Feature[] = [
   {
     title: "Cloud-powered developer environments",
     paragraph:
-      "Gitpod continuously builds your git branches like a CI server so that you can start coding right away - no more waiting for dependencies to download and builds to finish. Our own XXGB dev image takes only xx seconds to load.",
+      "Gitpod continuously builds your git branches like a CI server so that you can start coding right away - no more waiting for dependencies to download and builds to finish.",
     moreButton: {
       text: "More on prebuilds",
       href: "/docs/prebuilds",
