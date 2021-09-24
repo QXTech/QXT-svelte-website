@@ -1,19 +1,21 @@
 <script lang="ts">
+  import type { Ide } from "../../types/ide.type";
   import { createEventDispatcher } from "svelte";
-  export let ides;
+  export let ides: Ide[];
 
   const dispatch = createEventDispatcher();
 
-  const hasNoScreenshots = (name) =>
+  const hasNoScreenshots = (name: string) =>
     ides.find((ide) => ide.name === name).screenshots === undefined;
 
-  const handleMouseEnter = (e, name) => {
-    const [iconDiv, soonSpan]: HTMLElement[] = e.target.children;
+  const handleMouseEnter = (e: MouseEvent, name: string) => {
+    // @ts-ignore
+    const [iconDiv, soonSpan]: HTMLElement[] = Array.from((e.target as HTMLElement).children);
     if (hasNoScreenshots(name)) {
-      iconDiv.classList.remove("grayed")
-      soonSpan.style.display = 'flex';
+      iconDiv.classList.remove("grayed");
+      soonSpan.style.display = "flex";
     } else {
-      iconDiv.classList.add("grayed")
+      iconDiv.classList.add("grayed");
     }
 
     if (!hasNoScreenshots(name)) {
@@ -23,13 +25,14 @@
     }
   };
 
-  const handleMouseLeave = (e, name) => {
-    const [iconDiv, soonSpan]: HTMLElement[] = e.target.children;
-    if(hasNoScreenshots(name)) {
-      iconDiv.classList.add('grayed')
-      soonSpan.style.display = 'none';
+  const handleMouseLeave = (e: MouseEvent, name: string) => {
+    // @ts-ignore
+    const [iconDiv, soonSpan]: HTMLElement[] = Array.from((e.target as HTMLElement).children);
+    if (hasNoScreenshots(name)) {
+      iconDiv.classList.add("grayed");
+      soonSpan.style.display = "none";
     } else {
-      iconDiv.classList.remove("grayed")
+      iconDiv.classList.remove("grayed");
     }
   };
 </script>
@@ -98,7 +101,7 @@
     >
       <div
         class="icon-box flex items-center justify-center bg-off-white rounded-2xl shadow-lg transition duration-200 linear"
-      class:grayed={!screenshots}
+        class:grayed={!screenshots}
       >
         <img src="/svg/index/{icon}" alt={label} class="icon" />
       </div>

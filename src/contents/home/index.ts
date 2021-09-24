@@ -1,6 +1,7 @@
 import type { Brand } from "../../types/brand.type";
 import type { Project } from "../../types/project.type";
 import type { Testimonial } from "../../types/testimonial.type";
+import type { Ide } from "../../types/ide.type";
 
 export const brands: Brand[] = [
   {
@@ -441,5 +442,37 @@ export const testimonials: Testimonial[] = [
       `,
     twitterHandle: "k33g_org",
     tweetId: "1329461150422065152",
+  },
+];
+
+export const ides: Ide[] = [
+  {
+    name: "vscode",
+    label: "Visual Studio Code",
+    screenshots: {
+      desktop: "vscode-desktop.png",
+      browser: "vscode-browser.png",
+    },
+    icon: "vscode.svg",
+  },
+  {
+    name: "pycharm",
+    label: "PyCharm",
+    icon: "pycharm.svg",
+  },
+  {
+    name: "webstorm",
+    label: "GoLand",
+    icon: "webstorm.svg",
+  },
+  {
+    name: "rubymine",
+    label: "RubyMine",
+    icon: "rubymine.svg",
+  },
+  {
+    name: "goland",
+    label: "Goland",
+    icon: "goland.svg",
   },
 ];

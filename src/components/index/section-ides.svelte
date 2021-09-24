@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { ides } from "../../contents/home";
   import Section from "../section.svelte";
   import IdeSwitcher from "./ide-switcher.svelte";
   import ScreenshotToggle from "./screenshot-toggle.svelte";
@@ -7,45 +8,12 @@
   let toggleChecked = false;
 
   $: if(toggleChecked) {
-    console.log("Called.")
     ideType = 'desktop'
   } else {
     ideType = 'browser'
   }
 
-  const ides = [
-    {
-      name: "vscode",
-      label: "Visual Studio Code",
-      screenshots: {
-        desktop: "vscode-desktop.png",
-        browser: "vscode-browser.png",
-      },
-      icon: "vscode.svg",
-    },
-    {
-      name: "pycharm",
-      label: "PyCharm",
-      icon: "pycharm.svg",
-    },
-    {
-      name: "webstorm",
-      label: "GoLand",
-      icon: "webstorm.svg",
-    },
-    {
-      name: "rubymine",
-      label: "RubyMine",
-      icon: "rubymine.svg",
-    },
-    {
-      name: "goland",
-      label: "Goland",
-      icon: "goland.svg",
-    },
-  ];
-
-  const handleIdeChange = (e) => {
+  const handleIdeChange = (e: {detail: {text: string}}) => {
     selectedIde = e.detail.text;
   }
 
