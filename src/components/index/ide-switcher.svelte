@@ -38,6 +38,10 @@
 </script>
 
 <style type="text/postcss">
+  button {
+    @apply outline-none;
+  }
+
   .icon-box {
     height: 71px;
     width: 71px;
