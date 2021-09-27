@@ -77,7 +77,6 @@ export const otherFeatures: Feature[] = [
     image: {
       src: "/images/features/ipad.png",
       alt: "Gitpod Workspace on an iPad.",
-      classNames: 'shadow-medium rounded-4xl'
     }
   },
 ]
