@@ -13,10 +13,10 @@
     }
 
     @media (max-width: 972px) {
-      margin-top: var(--x-large);
+      margin-top: var(--x-huge);
 
       &:last-of-type {
-        margin-bottom: var(--x-large);
+        margin-bottom: var(--x-huge);
       }
     }
   }
