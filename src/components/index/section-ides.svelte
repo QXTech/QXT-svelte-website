@@ -32,10 +32,13 @@
     <div>
       <ScreenshotToggle bind:value={toggleChecked} on:change={() => (ideType = "desktop")} />
       <div class="relative">
-        <img
+        <div class="py-micro px-xx-small">
+          <img
           src="/images/index/{idetoRender.screenshots[ideType]}"
           alt={idetoRender.label}
+          class="shadow-brand"
         />
+        </div>
         <IdeSwitcher on:message={handleIdeChange} {ides} />
       </div>
     </div>

@@ -92,7 +92,7 @@
   }
 </style>
 
-<div class="absolute top-0 right-0 space-y-1 sm:space-y-5">
+<div class="absolute top-0 right-0 lgx:-right-2 space-y-1 sm:space-y-5">
   {#each ides as { name, label, icon, screenshots }}
     <button
       class="block relative cursor-pointer"
