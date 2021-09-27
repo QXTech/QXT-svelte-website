@@ -4,7 +4,6 @@
   import LayoutRoot from "../components/layout-root.svelte";
   import Nav from "../components/main-nav/index.svelte";
   import Footer from "../components/footer.svelte";
-  // import AnnouncementBanner from "../components/banners/announcement.svelte";
   import CookieConsent from "../components/banners/cookie-consent.svelte";
 </script>
 
@@ -14,7 +13,6 @@
   }
 </style>
 
-<!-- <AnnouncementBanner /> -->
 <LayoutRoot>
   <Nav />
   <LayoutMain>

@@ -9,6 +9,7 @@
   import Logo from "../svgs/logo.svelte";
   import { showHideOverflowY } from "../../utils/helpers";
   import SignUpButtonTablet from "./sign-up-button-tablet.svelte";
+  import AnnouncementBanner from "../../components/banners/announcement.svelte";
 
   let scroll: number;
 
@@ -106,6 +107,7 @@
   class:scrolled-out={scroll > 0}
   class:bg-open-state={$menuState}
 >
+  <AnnouncementBanner />
   <div
     class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-4 sm:px-8"
   >
