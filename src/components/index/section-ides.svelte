@@ -29,7 +29,7 @@
 <Section>
   <div class="row">
     <h2 class="text-center">Your environment, your tools, your craft</h2>
-    <div>
+    <div class="max-w-5xl mx-auto">
       <ScreenshotToggle bind:value={toggleChecked} on:change={() => (ideType = "desktop")} />
       <div class="relative">
         <div class="py-micro px-xx-small">

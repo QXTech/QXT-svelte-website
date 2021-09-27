@@ -27,7 +27,7 @@
   }
 </style>
 
-<div class="flex justify-center items-center space-x-micro my-x-small">
+<div class="flex justify-center items-center space-x-micro mt-x-small mb-macro">
   <label for="toggle">Desktop</label>
   <div class="toggle-container relative flex items-center">
     <input id="toggle" type="checkbox" on:change={(e) => value = e.currentTarget.checked } class="h-full w-full" />
