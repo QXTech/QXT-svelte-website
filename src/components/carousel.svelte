@@ -1,3 +1,9 @@
+<script>
+  let clazz = "";
+
+  export { clazz as class };
+</script>
+
 <style>
   div {
     scroll-snap-type: x mandatory;
@@ -25,6 +31,6 @@
   }
 </style>
 
-<div class="flex items-start overflow-x-scroll space-x-6" dir="ltr">
+<div class="{clazz} flex items-start overflow-x-scroll space-x-6" dir="ltr">
   <slot />
 </div>

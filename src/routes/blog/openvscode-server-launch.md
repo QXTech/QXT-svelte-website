@@ -15,11 +15,14 @@ title: OpenVSCode Server Launch
 
 <script>
   import OpenvscodeLaunchPartners from '../../components/blog/openvscode-launch-partners.svelte';
+  import Quotes from '../../components/blog/openvscode-quotes.svelte';
 </script>
 
 At Gitpod our focus has always been to remove all friction from the developer experience to empower developers to be always ready-to-code. Over the last couple of months we have come a long way and today are excited to announce a $13m funding round led by General Catalyst, a fully revamped visual & brand identity as well as several product milestones aimed at defining a new product category in modern software development.
 
 At Gitpod our focus has always been to remove all friction from the developer experience to empower developers to be always ready-to-code. Over the last couple of months we have come a long way and today are excited to announce a $13m funding round led by General Catalyst, a fully revamped visual & brand identity as well as several product milestones aimed at defining a new product category in modern software development.
+
+<Quotes />
 
 At Gitpod our focus has always been to remove all friction from the developer experience to empower developers to be always ready-to-code. Over the last couple of months we have come a long way and today are excited to announce a $13m funding round led by General Catalyst, a fully revamped visual & brand identity as well as several product milestones aimed at defining a new product category in modern software development.
 
