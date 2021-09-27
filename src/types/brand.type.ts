@@ -1,5 +1,5 @@
 export type Brand = {
-  href: string;
+  href?: string;
   logo: string;
   alt: string;
   transform?: string;
