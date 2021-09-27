@@ -26,15 +26,14 @@ export const brands: Brand[] = [
     className: "grey-logo",
   },
   {
+    alt: "DataStax",
+    logo: "svg/brands/datastax.svg",
+    transform: "scale(1.1)"
+  },
+  {
     alt: "Amazon",
     logo: "svg/brands/amazon.svg",
     transform: "scale(0.9) translateY(5px)",
-    className: "grey-logo",
-  },
-  {
-    alt: "Intel",
-    logo: "svg/brands/intel.svg",
-    transform: "scale(0.65)",
     className: "grey-logo",
   },
   {
@@ -42,6 +41,12 @@ export const brands: Brand[] = [
     logo: "svg/brands/code-institute.svg",
     className: "grey-logo",
   },
+  // {
+  //   alt: "Intel",
+  //   logo: "svg/brands/intel.svg",
+  //   transform: "scale(0.65)",
+  //   className: "grey-logo",
+  // },
   // {
   //   alt: "D-Wave",
   //   logo: "svg/brands/dwave.svg",
