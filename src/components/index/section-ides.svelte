@@ -20,7 +20,7 @@
   $: idetoRender = ides.find((ide) => ide.name === selectedIde);
 </script>
 
-<style>
+<style type="text/postcss">
   p {
     max-width: 638px;
   }
@@ -32,11 +32,11 @@
     <div class="max-w-5xl mx-auto">
       <ScreenshotToggle bind:value={toggleChecked} on:change={() => (ideType = "desktop")} />
       <div class="relative">
-        <div class="py-micro px-xx-small">
+        <div class="py-micro pl-0 pr-micro sm:px-xx-small">
           <img
           src="/images/index/{idetoRender.screenshots[ideType]}"
           alt={idetoRender.label}
-          class="shadow-brand"
+          class="shadow-brand rounded-lg"
         />
         </div>
         <IdeSwitcher on:message={handleIdeChange} {ides} />

@@ -29,7 +29,7 @@
 
 <div class="flex justify-center items-center space-x-micro mt-x-small mb-macro">
   <label for="toggle">Desktop</label>
-  <div class="toggle-container relative flex items-center">
+  <div class="toggle-container relative flex items-center cursor-pointer">
     <input id="toggle" type="checkbox" on:change={(e) => value = e.currentTarget.checked } class="h-full w-full" />
     <span class="absolute block bg-white pointer-events-none" />
   </div>

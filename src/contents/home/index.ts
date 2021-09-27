@@ -456,6 +456,16 @@ export const ides: Ide[] = [
     icon: "vscode.svg",
   },
   {
+    name: "intellij",
+    label: "IntelliJ IDEA",
+    icon: "intellij.svg"
+  },
+  {
+    name: "goland",
+    label: "Goland",
+    icon: "goland.svg",
+  },
+  {
     name: "pycharm",
     label: "PyCharm",
     icon: "pycharm.svg",
@@ -471,8 +481,8 @@ export const ides: Ide[] = [
     icon: "rubymine.svg",
   },
   {
-    name: "goland",
-    label: "Goland",
-    icon: "goland.svg",
-  },
+    name: "clion",
+    label: "CLion",
+    icon: "clion.svg"
+  }
 ];

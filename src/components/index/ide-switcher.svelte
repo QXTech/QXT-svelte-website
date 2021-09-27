@@ -10,7 +10,13 @@
 
   const handleMouseEnter = (e: MouseEvent, name: string) => {
     // @ts-ignore
-    const [iconDiv, soonSpan]: HTMLElement[] = Array.from((e.target as HTMLElement).children);
+    const [iconDiv, soonSpan]: HTMLElement[] = Array.from(
+      (e.target as HTMLElement).children
+    );
+    // the following if block is temporary and it should be removed when screenshots for the other ides are added.
+    if (!hasNoScreenshots(name)) {
+      return;
+    }
     if (hasNoScreenshots(name)) {
       iconDiv.classList.remove("grayed");
       soonSpan.style.display = "flex";
@@ -27,7 +33,9 @@
 
   const handleMouseLeave = (e: MouseEvent, name: string) => {
     // @ts-ignore
-    const [iconDiv, soonSpan]: HTMLElement[] = Array.from((e.target as HTMLElement).children);
+    const [iconDiv, soonSpan]: HTMLElement[] = Array.from(
+      (e.target as HTMLElement).children
+    );
     if (hasNoScreenshots(name)) {
       iconDiv.classList.add("grayed");
       soonSpan.style.display = "none";
@@ -51,19 +59,19 @@
       width: 55px;
     }
 
-    @media (max-width: 540px) {
-      height: 48px;
-      width: 48px;
+    @media (max-width: 768px) {
+      height: 44px;
+      width: 44px;
     }
 
-    @media (max-width: 460px) {
-      height: 40px;
-      width: 40px;
+    @media (max-width: 536px) {
+      height: 38px;
+      width: 38px;
     }
 
-    @media (max-width: 400px) {
-      height: 35px;
-      width: 35px;
+    @media (max-width: 435px) {
+      height: 32px;
+      width: 32px;
     }
   }
 
@@ -76,23 +84,24 @@
       width: 36px;
     }
 
-    @media (max-width: 540px) {
-      height: 25px;
-      width: 25px;
+    @media (max-width: 768px) {
+      height: 23px;
+      width: 23px;
     }
 
-    @media (max-width: 460px) {
-      height: 22px;
-      width: 22px;
+    @media (max-width: 536px) {
+      height: 20px;
+      width: 20px;
     }
   }
 
   .grayed {
     filter: grayscale(100%);
+    @apply hover:bg-white;
   }
 </style>
 
-<div class="absolute top-0 right-0 lgx:-right-2 space-y-1 sm:space-y-5">
+<div class="absolute top-0 right-0 lgx:-right-2 space-y-0 sm:space-y-2">
   {#each ides as { name, label, icon, screenshots }}
     <button
       class="block relative cursor-pointer"
@@ -104,7 +113,7 @@
       }}
     >
       <div
-        class="icon-box flex items-center justify-center bg-off-white rounded-2xl shadow-lg transition duration-200 linear"
+        class="icon-box flex items-center justify-center bg-off-white rounded-lg sm:rounded-2xl shadow-lg transition duration-200 linear"
         class:grayed={!screenshots}
       >
         <img src="/svg/index/{icon}" alt={label} class="icon" />
