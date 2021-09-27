@@ -18,3 +18,10 @@ export const showHideOverflowY = (bool: boolean) => {
     html.classList.remove("overflow-y-hidden");
   }
 };
+
+export const formatDate = (date) =>
+  new Date(Date.parse(date)).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
